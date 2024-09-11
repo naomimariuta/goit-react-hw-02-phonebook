@@ -22,7 +22,7 @@ class App extends Component {
 handleAdd = (name, number) => {
   if(name.trim() !=='' && number.trim()!==''){
     const newContact = {
-        id: nanoid(),
+        id: nanoid(),  
         name: name.trim(),
         number: number.trim(),
       };
@@ -30,6 +30,7 @@ handleAdd = (name, number) => {
       this.setState(prevState => ({
         contacts:[...prevState.contacts, newContact],
       }));
+      console.log(id);
   }
 };
 
