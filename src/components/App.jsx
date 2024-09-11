@@ -30,7 +30,7 @@ handleAdd = (name, number) => {
       this.setState(prevState => ({
         contacts:[...prevState.contacts, newContact],
       }));
-      console.log(id);
+      console.log(newContact.id);
   }
 };
 
